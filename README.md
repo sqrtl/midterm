@@ -14,6 +14,7 @@
 * .push()
 * .unshift()
 
+* You may NEED some of these at certain points, but definitely not all of them.
 * You can use anything else we've formally covered.
 * If we have not covered it, please ask to be sure that it's okay.
 
