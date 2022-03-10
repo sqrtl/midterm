@@ -160,7 +160,7 @@ If it is not, return false.
 */
 
 function divisibleBy4And7(a) {
-    if (a % 4 === 0 && a % 7 === 0){
+    if (a % 4 === 0 && a % 7 === 0) {
         return true;
     } else {
         return false;
@@ -184,10 +184,10 @@ Return false if otherwise
 */
 
 function exclamationAndQuestion(a) {
-    if(a.includes("!") && a.includes("?")){
+    if (a.includes("!") && a.includes("?")) {
         return true;
-    } else{
-    return false
+    } else {
+        return false
     }
 }
 
@@ -209,10 +209,10 @@ No need to add the count of A and B together.  Again, we want an array with the 
 function countAB(a) {
     let countA = 0;
     let countB = 0;
-    for (let i = 0; i < a.length; i ++){
-        if (a[i] === "a" || a[i] === "A"){
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] === "a" || a[i] === "A") {
             countA++;
-        } else if (a[i] === "b" || a[i] === "B"){
+        } else if (a[i] === "b" || a[i] === "B") {
             countB++
         }
     }
@@ -235,10 +235,10 @@ Finally, return your modified array.
 */
 
 function addStringIfLastS(a, b) {
-    for (let i = 0; i < a.length; i++){
-        if(a[i][a[i].length-1] === "s" || a[i][a[i].length-1] === "S"){
+    for (let i = 0; i < a.length; i++) {
+        if (a[i][a[i].length - 1] === "s" || a[i][a[i].length - 1] === "S") {
             a[i] += b;
-        } 
+        }
     }
     return a;
 }
@@ -260,8 +260,12 @@ You can assume that every number in the array will be unique
 */
 
 function twoSmallest(a) {
-    a.sort(function(a,b){return a-b})
-    return[a[0], a[1]];
+    if (a.length > 2) {
+        return undefined;
+    } else {
+        a.sort(function (a, b) { return a - b })
+        return [a[0], a[1]];
+    }
 }
 
 /* console.logs to test */
