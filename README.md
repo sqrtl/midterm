@@ -13,7 +13,7 @@
 * .indexOf()
 * .push()
 * .unshift()
-* That's really all!  I think the only one that you'll NEED to use is .push(), the rest are optional/may possibly make your life easier.  
+
 * You can use anything else we've formally covered.
 * If we have not covered it, please ask to be sure that it's okay.
 
